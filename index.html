@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Equalizer landing page</title>
   </head>
   <body>
@@ -46,8 +45,10 @@
                 level and access all our incredible features!
               </p>
               <p class="cta-sub__price"><span>$4</span>/ month</p>
-              <button class="button button--ios">iOS Download</button>
-              <button class="button button--android">Android Download</button>
+              <div class="cta-sub__buttons">
+                <button class="button button--ios">iOS Download</button>
+                <button class="button button--android">Android Download</button>
+              </div>
             </div>
           </div>
         </section>
@@ -59,7 +60,8 @@
           <img src="./assets/logo.svg" alt="logo" class="footer__logo logo" />
           <p class="footer__copyright">
             All rights reserved © Equalizer 2021 Have any problems? Contact us
-            via social media or email us at equalizer@example.com
+            via social media or email us at
+            <strong>equalizer@example.com</strong>
           </p>
           <div class="footer__socials">
             <img

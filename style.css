@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+/* Global variables */
+:root {
+  /* Colors */
+  --color-primary-900: hsl(244, 23%, 12%);
+  --color-primary-100: hsl(20, 33%, 98%);
+
+  --color-accent-300: hsl(33, 100%, 70%);
+  --color-accent-350: hsl(12, 94%, 65%);
+  --color-accent-360: hsl(177, 68%, 64%);
+
+  /* Typography */
+  --font-family-default: "IBM Plex Sans", sans-serif;
+
+  --font-size-body--m: 1rem;
+  --font-size-body--l: 1.125rem;
+  --font-size-heading--l: 2.5rem;
+  --font-size-heading--m: 2rem;
+
+  --font-weight-reg: 400;
+  --font-weight-bold: 700;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.625rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Global styles */
+body {
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-body--m);
+  font-weight: var(--font-weight-reg);
+  color: var(--color-primary-900);
+  background: var(--color-primary-100);
+  background-image: url("./assets/bg-main-mobile.png");
+  background-position: top -220px right -200px;
+  background-repeat: no-repeat;
+}
+
+.container {
+  min-width: 375px;
+}
+
+.header-logo {
+  padding: 2.5rem 1.5rem 1rem;
+}
+
+.hero {
+  padding: 1.5rem;
+}
+
+.hero__title {
+  line-height: 3rem;
+  padding: 1.5rem 0 1.25rem;
+  font-size: var(--font-size-heading--l);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.45px;
+}
+
+.hero__img {
+  display: none;
+}
+
+.cta-main {
+  position: relative;
+  margin-top: 12rem;
+  padding-top: 380px;
+  background-color: var(--color-primary-900);
+  background-image: url("./assets/bg-pattern-2.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 280px;
+  border-radius: 12px;
+}
+
+.cta-main::before {
+  content: "";
+  position: absolute;
+  width: 209px;
+  height: 430px;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("./assets/illustration-app.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cta-sub {
+  padding: 1.5rem;
+  border-radius: 12px;
+
+  color: var(--color-primary-100);
+  background-color: var(--color-accent-350);
+}
+
+.cta-sub__title {
+  padding: 1.5rem 0 0.85rem;
+  line-height: 2.5rem;
+  font-size: var(--font-size-heading--m);
+  font-weight: var(--font-weight-bold);
+}
+
+.cta-sub__body,
+.cta-sub__price {
+  font-size: var(--font-size-body--l);
+  line-height: 1.75rem;
+}
+
+.cta-sub__price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cta-sub__price span {
+  display: block;
+  padding: 2.75rem 0;
+  font-size: 4.0625rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.button {
+  display: block;
+  padding: 18px 0;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  test-decoration: none;
+  background: none;
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.18px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 20px;
+  background-image: var(--icon);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.button--ios {
+  --icon: url("./assets/icon-apple.svg");
+  color: var(--color-primary-100);
+  background-color: var(--color-primary-900);
+}
+
+.button--android {
+  --icon: url("./assets/icon-android.svg");
+  margin-top: 1rem;
+  background-color: var(--color-primary-100);
+}
+
+.footer {
+  padding: 1.5rem;
+}
+
+.footer__logo {
+  padding: 2.25rem 0;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+  padding: 4rem 0;
+}
