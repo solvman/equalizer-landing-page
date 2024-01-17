@@ -154,6 +154,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  transition: all 0.4s;
+  cursor: pointer;
 }
 
 .button::before {
@@ -178,6 +180,14 @@ body {
   background-color: var(--color-primary-100);
 }
 
+.button--ios:is(:hover, :focus) {
+  background-color: var(--color-accent-360);
+}
+
+.button--android:is(:hover, :focus) {
+  background-color: var(--color-accent-300);
+}
+
 .footer {
   padding: 1.5rem;
 }
@@ -190,4 +200,13 @@ body {
   display: flex;
   gap: 1rem;
   padding: 4rem 0;
+}
+
+icon {
+  fill: var(--color-primary-900);
+  transition: all 0.4s;
+}
+
+.icon:is(:hover, :focus) {
+  fill: var(--color-accent-350);
 }
