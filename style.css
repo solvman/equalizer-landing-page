@@ -210,3 +210,19 @@ icon {
 .icon:is(:hover, :focus) {
   fill: var(--color-accent-350);
 }
+
+@media (min-width: 600px) {
+  :root {
+    --font-size-body--m: 1rem;
+    --font-size-body--l: 1.125rem;
+    --font-size-heading--l: 3.55rem;
+    --font-size-heading--m: 1.77rem;
+  }
+  html {
+    font-size: 18px;
+  }
+  body {
+    background-image: url("./assets/bg-main-tablet.png");
+    background-position: top -220px right -200px;
+  }
+}
