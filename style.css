@@ -60,7 +60,7 @@ body {
 
 .container {
   min-width: 375px;
-  max-width: 1110px;
+  max-width: 1190px;
 }
 
 .header-logo {
@@ -193,6 +193,10 @@ body {
   padding: 1.5rem;
 }
 
+.footer__copyright {
+  font-size: 16px;
+}
+
 .footer__logo {
   padding: 2.25rem 0;
 }
@@ -203,7 +207,7 @@ body {
   padding: 4rem 0;
 }
 
-icon {
+.icon {
   fill: var(--color-primary-900);
   transition: all 0.4s;
 }
@@ -258,7 +262,7 @@ icon {
 
   .cta-main {
     background-position: top center;
-    height: 696px;
+    height: 600px;
     margin-bottom: 2rem;
   }
 
@@ -284,5 +288,67 @@ icon {
   }
   .footer__socials {
     justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1100px) {
+  :root {
+    --font-size-body--m: 1rem;
+    --font-size-body--l: 1.125rem;
+    --font-size-heading--l: 4.4rem;
+    --font-size-heading--m: 2rem;
+  }
+  html {
+    font-size: 20px;
+  }
+  body {
+    background-image: url("./assets/bg-main-desktop.png");
+    background-position: top -10rem center;
+  }
+  .container {
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero__body {
+    width: 75%;
+  }
+  .hero__title {
+    line-height: 4.4rem;
+  }
+
+  .hero__img {
+    top: -2rem;
+    right: 0;
+  }
+
+  .cta-sub {
+    height: 625px;
+    max-width: 446px;
+  }
+
+  .cta-sub__body {
+    font-size: var(--font-size-body--m);
+  }
+
+  .footer {
+    margin-top: 9rem;
+  }
+  .footer__logo,
+  .footer__socials {
+    padding: 0;
+  }
+
+  .footer div:first-child,
+  .footer__socials {
+    flex-basis: 25%;
+  }
+
+  .footer__socials {
+    align-self: center;
   }
 }
